@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var questions = require('./routes/questions');
 var devices = require('./routes/devices');
 
 var app = express();
@@ -30,7 +29,6 @@ app.use(require('node-sass-middleware')({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/questions', questions);
 app.use('/devices', devices);
 
 // catch 404 and forward to error handler
