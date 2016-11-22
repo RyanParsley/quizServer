@@ -7,12 +7,12 @@ module.exports = [
     "lightbulb": {
       "status": "on",
       "type": "led",
-      "last-change: fakeDay
+      "last-change": fakeDay
     },
     "lightbulb2": {
       "status": "on",
       "type": "led",
-      "last-change: fakeDay
+      "last-change": fakeDay
     },
     "motor": {
       "status": "on",
