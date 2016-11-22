@@ -5,6 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://ryanparsley:ryanparsley@ds161487.mlab.com:61487/thinglist');
+
+var Device = require('./app/models/device');
+
 var index = require('./routes/index');
 var devices = require('./routes/devices');
 
