@@ -17,7 +17,7 @@ module.exports = [
     "motor": {
       "status": "on",
       "type": "motor",
-      "last-change: fakeDay
+      "last-change": fakeDay
     }
   }
 ];
