@@ -7,17 +7,8 @@ router.get('/', function(req, res, next) {
   res.json(devices);
 });
 
-var fakeDay = new Date('November 20, 2016 03:24:00');
-
 router.get('/:name', function(req, res, next) {
-  res.json(
-    {
-      "name": "lightbulb",
-      "status": "on",
-      "type": "led",
-      "last-change": fakeDay
-    }
-  );
+  res.json(devices.name);
 });
 
 module.exports = router;
