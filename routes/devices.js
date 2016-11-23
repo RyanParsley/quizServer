@@ -2,6 +2,23 @@ var express = require('express');
 var router = express.Router();
 var devices = require("../data/devices");
 
+// create a device (accessed at POST http://localhost:3000/devices)
+router.post('/', function(req, res) {
+
+  var device = new Device();
+  device.name = req.body.name;
+
+  device.save(function(err) {
+    if (err)
+      res.send(err);
+
+    res.json({
+      message:
+        'Device created!'
+    });
+  });
+});
+
 /* GET questions listing. */
 router.get('/', function(req, res, next) {
   res.json(devices);
