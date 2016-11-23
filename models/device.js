@@ -8,4 +8,5 @@ var DeviceSchema   = new Schema({
   'last-change': Date
 });
 
-module.exports = mongoose.model('Device', DeviceSchema);
+var Device  = mongoose.model('Device', DeviceSchema);
+module.exports = Device;
